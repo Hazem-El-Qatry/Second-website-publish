@@ -1092,8 +1092,11 @@ header nav .form i {
   .landing .text .content {
     max-width: 100%;
   }
-  .landing .change-background {
-    display: none;
+  .landing .fa-angle-left {
+    left: 10px;
+  }
+  .landing .fa-angle-right {
+    right: 10px;
   }
 
   .services .serv-box {
