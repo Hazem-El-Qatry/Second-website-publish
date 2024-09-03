@@ -107,6 +107,7 @@ ul {
   padding: 5px;
   font-family: Arial, Tahoma;
   cursor: pointer;
+  z-index: 999999999999999999999999;
 }
 
 .up:hover {
