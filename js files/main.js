@@ -140,13 +140,20 @@ toggler.onclick = function () {
   }
 };
 
-// close.onclick = function () {
-//   this.parentElement.classList.remove("open");
-// };
+/* -------------------------------------------------------------------------- */
+/* scroll up button */
 
-// document.onkeyup = function (e) {
-//   // console.log(e);
-//   if (e.key === "Escape") {
-//     nav.classList.remove("open");
-//   }
-// };
+let span = document.querySelector(".up");
+
+window.onscroll = function () {
+  this.scrollY > 740
+    ? span.classList.add("show")
+    : span.classList.remove("show");
+};
+
+span.onclick = function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
