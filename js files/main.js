@@ -122,3 +122,31 @@ function removeAllActive() {
   //     bullet.classList.remove("active");
   //   });
 }
+
+/* ------------------------------------------------------------------------ */
+/* nav bar */
+
+let toggler = document.querySelector(".toggle");
+let nav = document.querySelector(".nav-links");
+// let close = document.querySelector(".close");
+
+toggler.onclick = function () {
+  if (nav.classList.contains("close")) {
+    nav.classList.remove("close");
+    nav.classList.add("open");
+  } else if (nav.classList.contains("open")) {
+    nav.classList.remove("open");
+    nav.classList.add("close");
+  }
+};
+
+// close.onclick = function () {
+//   this.parentElement.classList.remove("open");
+// };
+
+// document.onkeyup = function (e) {
+//   // console.log(e);
+//   if (e.key === "Escape") {
+//     nav.classList.remove("open");
+//   }
+// };
