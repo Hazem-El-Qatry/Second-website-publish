@@ -199,6 +199,15 @@ header nav .toggle {
   color: white;
   font-size: 22px;
   z-index: 9999999999999999;
+  cursor: pointer;
+}
+
+header nav .toggle:hover {
+  color: var(--main-color);
+}
+
+header nav .toggle.active {
+  color: var(--main-color);
 }
 
 header nav ul {
@@ -1165,6 +1174,9 @@ header nav .form i {
   }
   header nav ul li a {
     padding: 15px;
+  }
+  header nav ul li a:hover {
+    padding-left: 20px;
   }
   .slider-container img {
     width: 300%;
